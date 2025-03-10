@@ -3,75 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sai Charan Raj Bhavaraju - Portfolio</title>
+  <meta name="description" content="Sai Charan Raj Bhavaraju - Backend Developer Portfolio">
+  <title>Sai Charan Raj Bhavaraju | Backend Developer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <div class="logo">
-      <img src="logo.png" alt="Sai Charan Raj Logo" id="logo-img">
-      <h1>Sai Charan Raj Bhavaraju</h1>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#blog">Blog</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1 class="hero">Hi, I'm Sai Charan Raj Bhavaraju, a Backend Developer</h1>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <h2>Blog</h2>
+    <p>Results-driven Backend Developer with 7+ years of experience in designing, developing, and optimizing high-performance applications. Proficient in Node.js, TypeScript, Python, and cloud platforms (AWS). Expertise in microservices architecture, CI/CD pipelines, and scalable API development. Passionate about delivering robust, secure, and maintainable backend solutions that enhance business efficiency and system performance.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>AI-Driven Document Automation System (Dark Matter Technologies)</h3>
+      <p><strong>Technologies:</strong> Node.js, Nest.js, AWS Lambda, PostgreSQL, Auth0</p>
+      <p>Automated document processing workflows, improving operational efficiency by 30%.</p>
     </div>
-  </header>
+    <div class="project">
+      <h3>Scalable E-Commerce Platform (Dell Technologies)</h3>
+      <p><strong>Technologies:</strong> Node.js, Express.js, Docker, Kubernetes, Dell Cloud</p>
+      <p>Managed high-traffic e-commerce platforms with 99.9% uptime, reducing response times by 20%.</p>
+    </div>
+    <div class="project">
+      <h3>Real-Time Analytics Dashboard (Eastern Illinois University)</h3>
+      <p><strong>Technologies:</strong> Python, Node.js, React.js, PostgreSQL, Dell Cloud</p>
+      <p>Developed a real-time dashboard, improving performance monitoring with a 15% latency reduction.</p>
+    </div>
+  </section>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Blog Section -->
-    <section id="blog">
-      <h2>Blog</h2>
-      <p>Results-driven Backend Developer with 7+ years of experience in designing, developing, and optimizing high-performance applications. Proficient in Node.js, TypeScript, Python, and cloud platforms (AWS). Expertise in microservices architecture, CI/CD pipelines, and scalable API development. Passionate about delivering robust, secure, and maintainable backend solutions that enhance business efficiency and system performance.</p>
-    </section>
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>What Clients Say</h2>
+    <div class="testimonial">
+      <p>"Sai Charan is a brilliant developer. He helped us automate our workflows and reduced our operational costs by 30%."</p>
+      <h4>- Client Name, Company</h4>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-      
-        <!-- Project 1: AI-Driven Document Automation System -->
-        <div class="project">
-          <h3>AI-Driven Document Automation System (Dark Matter Technologies)</h3>
-          <p><strong>Technologies:</strong> Node.js, Nest.js, AWS Lambda, PostgreSQL, Auth0</p>
-          <p>Automated document processing workflows, improving operational efficiency by 30%.</p>
-        </div>
-      
-        <!-- Project 2: Scalable E-Commerce Platform -->
-        <div class="project">
-          <h3>Scalable E-Commerce Platform (Dell Technologies)</h3>
-          <p><strong>Technologies:</strong> Node.js, Express.js, Docker, Kubernetes, Dell Cloud</p>
-          <p>Managed high-traffic e-commerce platforms with 99.9% uptime, reducing response times by 20%.</p>
-        </div>
-      
-        <!-- Project 3: Real-Time Analytics Dashboard -->
-        <div class="project">
-          <h3>Real-Time Analytics Dashboard (Eastern Illinois University)</h3>
-          <p><strong>Technologies:</strong> Python, Node.js, React.js, PostgreSQL, Dell Cloud</p>
-          <p>Developed a real-time dashboard, improving performance monitoring with a 15% latency reduction.</p>
-        </div>
-      
-      </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-        
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="your-email-handler.php" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Sai Charan Raj Bhavaraju. All rights reserved.</p>
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i></a>
+    <p>&copy; 2025 Sai Charan Raj Bhavaraju</p>
+    <button onclick="toggleTheme()">Toggle Theme</button>
   </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>

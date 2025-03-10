@@ -41,9 +41,39 @@
     font-size: 1.2rem;
   }
   
-  /* Main Content Styling */
-  main {
-    padding: 40px 20px;
+  /* Navigation Styling */
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #111;
+    padding: 15px;
+    z-index: 100;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #3498db;
+  }
+  
+  /* Hero Section */
+  #hero {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .hero {
+    font-size: 2rem;
+    color: white;
+    border-right: 2px solid white;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30) 1s forwards;
   }
   
   /* Blog Section */
@@ -99,6 +129,30 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
+  /* Testimonials Section */
+  #testimonials {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .testimonial p {
+    color: #bbb;
+    font-size: 1.2rem;
+  }
+  
+  .testimonial h4 {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  
   /* Contact Section */
   #contact {
     background-color: #333;
@@ -148,7 +202,40 @@
     text-align: center;
   }
   
-  footer p {
+  footer i {
+    font-size: 1.5rem;
     color: #bbb;
-    font-size: 1rem;
+    margin: 0 10px;
+  }
+  
+  footer i:hover {
+    color: #3498db;
+  }
+  
+  footer button {
+    background-color: #111;
+    border: 1px solid #3498db;
+    color: #3498db;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  footer button:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  body.dark-theme {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  body.dark-theme #projects, body.dark-theme #blog, body.dark-theme #contact {
+    background-color: #f4f4f4;
+  }
+  
+  /* Add smooth scroll */
+  html {
+    scroll-behavior: smooth;
   }
