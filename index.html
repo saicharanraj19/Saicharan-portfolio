@@ -5,52 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sai Charan Raj Bhavaraju - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- Header Section -->
   <header>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm Sai Charan Raj Bhavaraju, a Backend Developer specializing in Node.js, TypeScript, and cloud platforms.</p>
+    <div class="logo">
+      <img src="logo.png" alt="Sai Charan Raj Logo" id="logo-img">
+      <h1>Sai Charan Raj Bhavaraju</h1>
+    </div>
   </header>
 
+  <!-- Main Content -->
   <main>
+    <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-          <h3>Project Title</h3>
-          <p>Description of the project.</p>
-          <p>Tech Stack: Node.js, React.js, etc.</p>
-          <a href="https://github.com/your-repo" target="_blank">View on GitHub</a>
-        </div>
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project 1 Title</h3>
+        <p>Description of the project.</p>
+        <p>Tech Stack: Node.js, React.js, etc.</p>
+        <a href="https://github.com/your-repo" target="_blank">View on GitHub</a>
+      </div>
+      <!-- Add more projects here -->
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+      <h2>Blog</h2>
+      <div class="blog-post">
+        <h3>Blog Post 1 Title</h3>
+        <p>Excerpt from the blog post.</p>
+        <a href="https://your-blog-link" target="_blank">Read More</a>
+      </div>
+      <!-- Add more blog posts here -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
         
-      </section>
-      <section id="blog">
-        <h2>Blog</h2>
-        <div class="blog-post">
-          <h3>Blog Title</h3>
-          <p>Excerpt from your blog post or article.</p>
-          <a href="https://your-blog-link" target="_blank">Read More</a>
-        </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
         
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required><br><br>
-          
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required><br><br>
-          
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="message" rows="4" required></textarea><br><br>
-          
-          <button type="submit">Send</button>
-        </form>
-      </section>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        
+        <button type="submit">Send</button>
+      </form>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <!-- Footer info like contact links -->
+    <p>© 2025 Sai Charan Raj Bhavaraju. All rights reserved.</p>
   </footer>
 </body>
 </html>
